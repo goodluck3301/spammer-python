@@ -1,3 +1,7 @@
+import pyautogui
+import time
+from termcolor import colored
+
 def spam():
     text = input(colored('Enter text for send!\n   ', 'green'))
     count = input(colored('Enter count!\n   ', 'green'))
@@ -11,5 +15,5 @@ def spam():
             pyautogui.press('enter')
     except:
         print(colored('    Input error:(', 'red'))
-
+        
 spam()
